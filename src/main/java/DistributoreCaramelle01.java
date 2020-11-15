@@ -18,7 +18,7 @@ public class DistributoreCaramelle01 {
             System.out.println("Quante caramelle vuoi comprare?");
             ncaramelle = input.nextInt();
             System.out.println("Inserisci monete");
-            monete = input.nextDouble();
+            monete = input.nextInt();
             if (ncaramelle<0 || ncaramelle>200){
                 System.out.println("Il numero inserito è errato");
             }
