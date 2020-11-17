@@ -21,7 +21,7 @@ public class DepositoBancario01 {
         while (saldo<soglia){
             saldo = saldo+(saldo*interesse/100);
             aa++;
-            System.out.println("Anni "+aa+" Saldo "+saldo);
+            System.out.println("Anni/o "+aa+" Saldo "+saldo);
         }
         System.out.println("Per poter superarre o raggiungere la soglia di " +soglia+ " euro, ci vogliono " +aa+" anni");
     }

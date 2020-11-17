@@ -13,17 +13,32 @@ import java.util.Scanner;
 public class LavandinoOtturato01 {
     public static void main(String[] args) {
         Scanner input = new Scanner( System.in );
-        int livello, capacità, x, y, secondi;
-        secondi = 0;
+        int liv, capacità, x, y, sec;
+        sec = 0;
         System.out.println("Inserisci il valore iniziale del livello dell'acqua");
-        livello = input.nextInt();
+        liv = input.nextInt();
         System.out.println("Inserisci la capacità del lavandino");
         capacità = input.nextInt();
         System.out.println("Quanti cl riesce a scaricare il lavandino al secondo?");
         x = input.nextInt();
         System.out.println("Quanti cl cadono nel lavandino ogni tre secondi?");
         y = input.nextInt();
-        while (livello<capacità){
+        while (sec<20 && liv<capacità && liv>0){
+            liv=liv-x;
+            sec++;
+            if (sec%3 == 0){
+                liv=liv+y;
+            }
+            else if (liv<0){
+                liv=0;
+            }
+            System.out.println("In "+sec+" secondi raggiunge "+liv+" centilitri");
+        }
+        if (liv == 0){
+            System.out.println("Il lavandino è svuotato");
+        }
+        else if (liv >= capacità){
+            System.out.println("Il lavandino è completamente pieno");
         }
      }    
 }
