@@ -1,4 +1,4 @@
-//
+//Author Brazzoli Marica
 /*Modificare il programma TavolaPitagorica visto a lezione in modo che i valori stampati siano ben 
 incolonnati come nel seguente esempio:
 1    2   3   4    5    6   7    8    9   10
