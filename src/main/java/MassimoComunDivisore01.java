@@ -10,10 +10,9 @@ public class MassimoComunDivisore01 {
         num1 = input.nextInt();
         System.out.println("Inserisci il secondo numero");
         num2 = input.nextInt();
-        mcd=1;
+        mcd=num2;
         if (num1>0 && num2>0){
-            
-            System.out.println("Il massimo comun divisore di "+num1+" e "+num2+" è "+mcd);
+           
         }
         else if (num1<=0){
             System.out.println("Numero uno errato");
