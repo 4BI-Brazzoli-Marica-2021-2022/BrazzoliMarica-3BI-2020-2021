@@ -19,6 +19,7 @@ public class MediaNumeri01 {
             somma=num1+somma;
             System.out.println("Inserisci il prossimo numero");
             num2 = input.nextInt();
+            somma=num2+somma;
             System.out.println(somma);
         }
         media=somma/cont;

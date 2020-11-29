@@ -15,20 +15,24 @@ import java.util.Scanner;
 public class ContaNumeriCrescenti {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int numpre, numdopo;
+        int numpre, numdopo, cont;
+        cont=0;
         System.out.println("Inserire un numero");
         numdopo = input.nextInt();
         do {
             numpre=numdopo;
             System.out.println("Inserisci il prossimo numero");
             numdopo = input.nextInt();
+            cont++;
         }
         while (!(numpre>numdopo || numpre==numdopo));
         if (numpre==numdopo){
             System.out.println("Hai inserito due volte il numero " + numdopo);
+            System.out.println("Hai inserito " + cont + " numeri");
         }
         else if (numpre>numdopo){
             System.out.println("Il numero che hai inserito " +numdopo+ " è minore del precedente " +numpre);
+            System.out.println("Hai inserito " + cont + " numeri");
         }
     }
 }
