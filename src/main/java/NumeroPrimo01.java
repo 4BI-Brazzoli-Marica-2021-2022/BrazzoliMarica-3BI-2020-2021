@@ -6,19 +6,20 @@ import java.util.Scanner;
 public class NumeroPrimo01 {
     public static void main(String[] args) {
         Scanner input = new Scanner( System.in );
-        int num1;
-        System.out.println("Inserisci un numero");
-        num1 = input.nextInt();       
-        if (num1>0){
-            if(num1%2==0){
-                System.out.println("Il numero che hai inserito non è primo");
-            }
-            else {
-                System.out.println("Il numero che hai inserito è primo");
+        int num, cont, i;
+        cont=0;
+        System.out.println("Dammi un numero");
+        num = input.nextInt();
+        for (i=1; i<=num; i++){
+            if (num%i==0){
+                cont++;
             }
         }
-        else if (num1<=0){
-            System.out.println("Numero errato");
+        if (cont<=2){
+            System.out.println("Il numero "+num+" è un numero primo");
+        }
+        else{
+            System.out.println("Il numero "+num+" non è un numero primo");
         }
     }
 }

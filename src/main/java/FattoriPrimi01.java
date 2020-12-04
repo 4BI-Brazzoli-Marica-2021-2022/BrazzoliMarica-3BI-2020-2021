@@ -8,7 +8,16 @@ public class FattoriPrimi01 {
         System.out.println("Inserisci un numero");
         num = input.nextInt();
         while (num!=1){
-            
+            if (num%n==0){
+                num=num/n;
+                System.out.println(n);
+                if(n!=1){
+                    System.out.println(" * ");
+                }
+            }
+            else{
+                n++;
+            }
         }
     }
 }
