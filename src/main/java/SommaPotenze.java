@@ -23,12 +23,12 @@ public class SommaPotenze {
             min=k;
         }
         for (i=1; i<=min; i++){
-            potenza=potenza*2;
+            potenza*=2;
         }
         somma=potenza;
         for (i=1; i<=max; i++){
-            potenza=potenza*2;
-            somma=somma+potenza;
+            potenza*=2;
+            somma+=potenza;         
         }
         System.out.println("La somma delle potenze è "+somma);
     }

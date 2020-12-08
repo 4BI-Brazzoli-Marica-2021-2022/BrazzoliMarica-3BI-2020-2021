@@ -13,7 +13,7 @@ public class Fattoriale {
         num = input.nextInt();
         ris=1;
         while (num>0){
-            ris=ris*num;
+            ris*=num;
             num--;
         }
         System.out.println("Il fattoriale è "+ris);

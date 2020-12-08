@@ -13,11 +13,12 @@ public class NumeriDivisibili {
         System.out.println("Inserisci un numero");
         x = input.nextInt();
         for (i=1; i<=val; i++){
+            System.out.println("Inserisci un altro numero");
             y = input.nextInt();
             if (y%x==0){
                 cont++;
             }
         }
-        System.out.println(cont);
+        System.out.println("I numeri positivi che hai inserito sono " +cont);
     }
 }
