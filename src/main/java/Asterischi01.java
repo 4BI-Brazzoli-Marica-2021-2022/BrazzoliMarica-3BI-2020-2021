@@ -17,9 +17,14 @@ import java.util.Scanner;
 public class Asterischi01 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int n, cont;
+        int n, i, m;
         System.out.println("Inserisci un numero");
         n = input.nextInt();
-        
+        for (i=1; i<=n; i++){
+            for (m=1; m<=i; m++){
+                System.out.print("*");
+            }
+            System.out.println( );
+        }
     }
 }

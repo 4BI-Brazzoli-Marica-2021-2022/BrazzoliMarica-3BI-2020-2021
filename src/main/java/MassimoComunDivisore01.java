@@ -5,20 +5,22 @@ import java.util.Scanner;
 public class MassimoComunDivisore01 {
     public static void main(String[] args) {
         Scanner input = new Scanner( System.in );
-        int num1, num2, mcd;
+        int num1, num2, min, max, i;
         System.out.println("Inserisci un numero");
         num1 = input.nextInt();
         System.out.println("Inserisci il secondo numero");
         num2 = input.nextInt();
-        mcd=num2;
-        if (num1>0 && num2>0){
-           
+        if (num1<num2){
+            min=num1;
+            max=num2;
         }
-        else if (num1<=0){
-            System.out.println("Numero uno errato");
+        else{
+            max=num1;
+            min=num2;
         }
-        else if (num2<=0){
-            System.out.println("Numero due errato");
+        for(i=min; min%i==0 && max%i==0;i--){
+            i=i;
         }
+        System.out.println(i);
     }
 }

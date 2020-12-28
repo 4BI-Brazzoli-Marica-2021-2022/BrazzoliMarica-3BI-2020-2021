@@ -8,21 +8,17 @@ import java.util.Scanner;
 public class MediaNumeri01 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int num1, num2, cont, somma; 
-        float media;
+        int n, num1, i;
+        double media, somma;
         somma=0;
-        cont=0;
-        System.out.println("Inserisci un numero");
-        num2 = input.nextInt();
-        while (num2>=0){
-            num1=num2;
-            somma=num1+somma;
-            System.out.println("Inserisci il prossimo numero");
-            num2 = input.nextInt();
-            somma=num2+somma;
-            System.out.println(somma);
+        System.out.println("Quanti numeri vuoi inserire");
+        n = input.nextInt();
+        for (i=1; i<=n; i++){
+            System.out.println("Inserisci il numero");
+            num1 = input.nextInt();
+            somma=somma+num1;
         }
-        media=somma/cont;
+        media=somma/n;
         System.out.println("La media dei numeri "+media);    
     }
 }

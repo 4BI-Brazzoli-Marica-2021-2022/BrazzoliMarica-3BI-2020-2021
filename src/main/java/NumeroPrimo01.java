@@ -11,7 +11,7 @@ public class NumeroPrimo01 {
         System.out.println("Dammi un numero");
         num = input.nextInt();
         for (i=1; i<=num; i++){
-            if (num%i==0){
+            if (num%i==0 || num==2){
                 cont++;
             }
         }
