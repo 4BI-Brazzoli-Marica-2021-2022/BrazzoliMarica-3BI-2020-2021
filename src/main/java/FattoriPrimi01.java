@@ -1,3 +1,5 @@
+//Author Brazzoli Marica
+//Dato un numero naturale fattorizzarlo in fattori primi.
 
 import java.util.Scanner;
 public class FattoriPrimi01 {
@@ -10,9 +12,9 @@ public class FattoriPrimi01 {
         while (num!=1){
             if (num%n==0){
                 num=num/n;
-                System.out.println(n);
+                System.out.print(n);
                 if(n!=1){
-                    System.out.println(" * ");
+                    System.out.print(" * ");
                 }
             }
             else{

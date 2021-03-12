@@ -8,16 +8,10 @@ import java.util.Scanner;
 public class VerificaPosizioneCifra01 {
     public static void main(String[] args) {
         Scanner input = new Scanner( System.in );
-        int num1, positivi, somma;
+        int num, positivi, somma;
         somma=0;
         positivi=0;
         System.out.println("Inserisci un numero");
-        num1 = input.nextInt();
-        while (num1!=0){
-                
-                System.out.println("Inserisci un nuovo numero");
-                num1 = input.nextInt();
-        }
-        System.out.println("Hai inserito " + positivi+ " numeri positivi e la loro somma è " + somma);
+        num = input.nextInt();
     }
 }
